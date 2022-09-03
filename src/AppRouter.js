@@ -1,10 +1,12 @@
 import { useRoutes } from "raviger";
 import Home from "./Components/Home";
 import Loginpg from "./Components/Loginpg";
+import Signup from "./Components/Signup";
 
 const route = {
   "/": () => <Home />,
-  "/login": () => <Loginpg/>
+  "/login": () => <Loginpg/>,
+  "/signin" : () => <Signup/>
 };
 
 export default function AppRouter() {
