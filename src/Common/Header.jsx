@@ -1,13 +1,13 @@
-import logo from "../Images/logo.png";
-export default function Header() {
+import Dashboard from "./Dashboard";
+export default function Header(props) {
+  // const [toggleDashboard, setToggleDashboard] = useState(false);
   return (
-    <div className="bg-red-500">
-      <div className="p-2 flex flex-row gap-2 justify-between bg-[#A0E8AF]">
-        <div>
-          <img src={logo} alt="" />
-        </div>
-        <div>
-          <p className="text-6xl font-extrabold text-">Hostelite</p>
+    <div className="flex justify-between gap-2">
+      <div>
+        <div
+          className={`${props.toggleDashboard ? "block" : "hidden md:block"} `}
+        >
+          <Dashboard />
         </div>
       </div>
     </div>
