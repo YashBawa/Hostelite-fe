@@ -5,7 +5,7 @@ import HomePage from "./Components/HomePage";
 
 const route = {
   "/": () => <Home />,
-  "/dash": () => <Dashboard />,
+  "/login": () => <Loginpg/>
   "/home": () => <HomePage />,
 };
 
