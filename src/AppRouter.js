@@ -1,8 +1,12 @@
 import { useRoutes } from "raviger";
+import Dashboard from "./Common/Dashboard";
 import Home from "./Components/Home";
+import HomePage from "./Components/HomePage";
 
 const route = {
   "/": () => <Home />,
+  "/dash": () => <Dashboard />,
+  "/home": () => <HomePage />,
 };
 
 export default function AppRouter() {
