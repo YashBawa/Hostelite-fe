@@ -1,10 +1,12 @@
 import { useRoutes } from "raviger";
+import Dashboard from "./Common/Dashboard";
 import Home from "./Components/Home";
-import Loginpg from "./Components/Loginpg";
+import HomePage from "./Components/HomePage";
 
 const route = {
   "/": () => <Home />,
   "/login": () => <Loginpg/>
+  "/home": () => <HomePage />,
 };
 
 export default function AppRouter() {
