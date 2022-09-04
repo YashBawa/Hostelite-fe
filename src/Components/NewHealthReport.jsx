@@ -4,15 +4,15 @@ import { allUsers, createHealthReport } from "../ApiUtils";
 import SelectMenu from "../Common/Elements/SelectMenu";
 
 export default function NewHealthReport(props) {
-  const [name, setName] = useState("");
+  const [id, setId] = useState(0);
   const [description, setDescription] = useState("");
 
   const [users, setUsers] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name.length !== 0 && description.length !== 0) {
-      createHealthReport(name, description).then(() => {
+    if (id !== 0 && description.length !== 0) {
+      createHealthReport(id, description).then(() => {
         props.close();
       });
     }
@@ -31,14 +31,7 @@ export default function NewHealthReport(props) {
         Add new Health Report
       </p>
       <form className="pt-12 flex flex-col gap-6" onSubmit={handleSubmit}>
-        <SelectMenu people={users} />
-        <TextField
-          label="Student Name"
-          fullWidth
-          variant="outlined"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-        ></TextField>
+        <SelectMenu people={users} setId={setId} />
         <TextField
           value={description}
           onChange={(e) => setDescription(e.target.value)}
