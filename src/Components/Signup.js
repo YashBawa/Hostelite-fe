@@ -73,74 +73,70 @@ export default function Signup() {
                 <input
                   type="text"
                   placeholder="Username"
-                    style={{
-                        paddingLeft: "5px",
-                        
-                        fontSize: "16px",
-                        width: "300px",
-                        height: "50px",
-                        borderRadius: "60px",
-                        boxShadow: "inset 0px 0px 25px 0px #888",
-                        border: "none",
-                        outline: "none",
-                        backgroundColor: "#fff",
-                        paddingLeft: "10px",
-                    }}
+                  style={{
+                    fontSize: "16px",
+                    width: "300px",
+                    height: "50px",
+                    borderRadius: "60px",
+                    boxShadow: "inset 0px 0px 25px 0px #888",
+                    border: "none",
+                    outline: "none",
+                    backgroundColor: "#fff",
+                    paddingLeft: "10px",
+                  }}
                 />
 
-                    <input
+                <input
                   type="text"
                   placeholder="Email id"
-                    style={{
-                        marginTop:"5px",
-                        paddingLeft: "5px",
-                        fontSize: "17px",
-                        width: "300px",
-                        height: "50px",
-                        borderRadius: "60px",
-                        boxShadow: "inset 0px 0px 25px 0px #888",
-                        border: "none",
-                        outline: "none",
-                        backgroundColor: "#fff",
-                        paddingLeft: "10px",
-                    }}
+                  style={{
+                    marginTop: "5px",
+                    fontSize: "17px",
+                    width: "300px",
+                    height: "50px",
+                    borderRadius: "60px",
+                    boxShadow: "inset 0px 0px 25px 0px #888",
+                    border: "none",
+                    outline: "none",
+                    backgroundColor: "#fff",
+                    paddingLeft: "10px",
+                  }}
                 />
-
               </div>
               <div>
                 {/* <img src={pass} alt="pass" className="email"/> */}
-                    <input
-                        type="password"
-                        placeholder="Password"
-                        className="name"
-                        style={{
-                            fontSize: "15px",
-                            width: "300px",
-                            marginTop: "5px",
-                            height: "50px",
-                            borderRadius: "60px",
-                            boxShadow: "inset 0px 0px 25px 0px #888",
-                            border: "none",
-                            outline: "none",
-                            backgroundColor: "#fff",
-                            paddingLeft: "10px",
-                        }}
-                    />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  className="name"
+                  style={{
+                    fontSize: "15px",
+                    width: "300px",
+                    marginTop: "5px",
+                    height: "50px",
+                    borderRadius: "60px",
+                    boxShadow: "inset 0px 0px 25px 0px #888",
+                    border: "none",
+                    outline: "none",
+                    backgroundColor: "#fff",
+                    paddingLeft: "10px",
+                  }}
+                />
               </div>
               <div style={{ paddingTop: "25px" }}>
-                    <button
-                      style={{
-                        width: "380px",
-                        height: "50px",
-                        borderRadius: "60px",
-                        backgroundColor: "#1E6091",
-                        color: "white",
-                        fontSize: "25px",
-                        border: "none",
-                      }}
-                    >
-                        Sign up
-                    </button>
+                <button
+                  style={{
+                    width: "380px",
+                    height: "50px",
+                    borderRadius: "60px",
+                    backgroundColor: "#1E6091",
+                    color: "white",
+                    fontSize: "25px",
+                    border: "none",
+                  }}
+                >
+                  Sign up
+                </button>
               </div>
 
               <p
