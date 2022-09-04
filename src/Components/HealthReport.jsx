@@ -2,10 +2,12 @@ import { useState } from "react";
 import Header from "../Common/Header";
 import { Button } from "@mui/material";
 import SlideBar from "../Common/Elements/SlideBar";
-import { navigate } from "raviger";
+import Modal from "../Common/Modal";
+import NewHealthReport from "./NewHealthReport";
 
 export default function HealthReport() {
   const [toggleDashboard, setToggleDashboard] = useState(false);
+  const [newReport, setNewReport] = useState(false);
   const healthReportsCount = 10;
 
   return (
@@ -28,13 +30,13 @@ export default function HealthReport() {
         </p>
         <div className="flex flex-wrap gap-4">
           <div className="flex flex-col gap-2 justify-center items-center bg-[#B5E48C] p-6 px-16 w-full md:w-1/5 flex-grow rounded-lg shadow">
-            <p className="text-4xl font-bold text-[#184E77]">
+            <p className="text-7xl font-bold text-[#184E77]">
               {healthReportsCount}
             </p>
             <p className="text-[#34A0A4]">Actice Health Reports</p>
           </div>
           <div className="flex flex-col gap-2 justify-center items-center bg-[#e48c8c] p-6 px-16 w-full md:w-1/5 flex-grow rounded-lg shadow">
-            <p className="text-4xl font-bold text-[#184E77]">
+            <p className="text-7xl font-bold text-[#184E77]">
               {healthReportsCount}
             </p>
             <p className="text-[#3c0e0e]">Closed Health Reports</p>
@@ -42,7 +44,7 @@ export default function HealthReport() {
         </div>
         <div>
           <div className="flex justify-end p-2">
-            <Button onClick={() => navigate("/health/new")} variant="contained">
+            <Button onClick={() => setNewReport(true)} variant="contained">
               <i className="fa fa-plus"></i>&nbsp; New Health Report
             </Button>
           </div>
@@ -51,6 +53,9 @@ export default function HealthReport() {
           </div>
         </div>
       </div>
+      <Modal open={newReport} setOpen={() => setNewReport(false)}>
+        <NewHealthReport close={() => setNewReport(false)} />
+      </Modal>
     </div>
   );
 }

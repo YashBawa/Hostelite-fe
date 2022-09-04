@@ -1,9 +1,10 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useRef, useState } from "react";
+import { Fragment, useRef } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 
 export default function Modal(props) {
-  const [open, setOpen] = useState(true);
+  const { open, setOpen } = props;
+  //   const [open, setOpen] = useState(true);
 
   const cancelButtonRef = useRef(null);
 

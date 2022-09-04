@@ -54,3 +54,12 @@ export const signup = async (username, password) => {
 export const me = async () => {
   return request("GET", {}, "api/user/");
 };
+
+export const allUsers = async () => {
+  return request("GET", {}, "user/");
+};
+
+export const createHealthReport = async (name, description) => {
+  const data = { reportee: name, description: description };
+  return request("POST", data, "health/");
+};
