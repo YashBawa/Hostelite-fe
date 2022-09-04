@@ -58,7 +58,7 @@ export default function Signup() {
               </div>
             </div>
             <div>
-              <h1>Login Page</h1>
+              <h1>SignUp Page</h1>
               <div>
                 <img
                   src={email}
@@ -75,7 +75,8 @@ export default function Signup() {
                   placeholder="Username"
                     style={{
                         paddingLeft: "5px",
-                        fontSize: "20px",
+                        
+                        fontSize: "16px",
                         width: "300px",
                         height: "50px",
                         borderRadius: "60px",
@@ -86,14 +87,34 @@ export default function Signup() {
                         paddingLeft: "10px",
                     }}
                 />
+
+                    <input
+                  type="text"
+                  placeholder="Email id"
+                    style={{
+                        marginTop:"5px",
+                        paddingLeft: "5px",
+                        fontSize: "17px",
+                        width: "300px",
+                        height: "50px",
+                        borderRadius: "60px",
+                        boxShadow: "inset 0px 0px 25px 0px #888",
+                        border: "none",
+                        outline: "none",
+                        backgroundColor: "#fff",
+                        paddingLeft: "10px",
+                    }}
+                />
+
               </div>
-              <div style={{ paddingtop: "20px" }}>
+              <div>
                 {/* <img src={pass} alt="pass" className="email"/> */}
                     <input
                         type="password"
                         placeholder="Password"
                         className="name"
                         style={{
+                            fontSize: "15px",
                             width: "300px",
                             marginTop: "5px",
                             height: "50px",
@@ -118,7 +139,7 @@ export default function Signup() {
                         border: "none",
                       }}
                     >
-                        Login
+                        Create Account 
                     </button>
               </div>
 
@@ -128,11 +149,7 @@ export default function Signup() {
                   marginTop: "25px",
                   fontWeight: "300",
                 }}
-                >
-                    <a style={{ color: "blue" }} href="#">
-                        Forgot password ?
-                    </a>{" "}
-                    <a href="/Loginpg">Create Account</a>
+                ><a href="/Loginpg"></a>
                 </p>
 
             </div>
