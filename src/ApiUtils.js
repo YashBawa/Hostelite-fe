@@ -48,5 +48,9 @@ export const login = async (username, password) => {
 
 export const signup = async (username, password) => {
   const data = { username: username, password: password };
-  return request("POST", data, "api-token-auth/");
+  return request("POST", data, "user/");
+};
+
+export const me = async () => {
+  return request("GET", {}, "api/user/");
 };

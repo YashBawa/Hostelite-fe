@@ -1,12 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { me } from "../ApiUtils";
 import Header from "../Common/Header";
 
 export default function HomePage() {
   const [toggleDashboard, setToggleDashboard] = useState(false);
 
   // sample data
-  const username = "Pranshu";
   const healthReportsCount = 10;
+
+  const [username, setUsername] = useState("");
+
+  useEffect(() => {
+    me().then((data) => {
+      setUsername(data.username);
+    });
+  });
 
   return (
     <div className="flex">
