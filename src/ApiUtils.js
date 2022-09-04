@@ -1,5 +1,5 @@
-// const baseURL = "https://hostelite-api.herokuapp.com/";
-const baseURL = "http://127.0.0.1:8000/";
+const baseURL = "https://hostelite-api.herokuapp.com/";
+// const baseURL = "http://127.0.0.1:8000/";
 
 // main request function
 const request = async (method = "GET", data = {}, endpoint) => {
