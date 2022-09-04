@@ -1,5 +1,6 @@
 import { useRoutes } from "raviger";
 import Loginpg from "./Components/Loginpg";
+import Signup from "./Components/Signup";
 import Home from "./Components/Home";
 import HomePage from "./Components/HomePage";
 import HealthReport from "./Components/HealthReport";
@@ -13,6 +14,7 @@ import Profile from "./Components/Profile";
 const route = {
   "/": () => <Home />,
   "/login": () => <Loginpg />,
+  "/signin" : () => <Signup/>
   "/home": () => <HomePage />,
   "/health": () => <HealthReport />,
   "/clean": () => <RoomCleaning />,
