@@ -58,11 +58,11 @@ export default function Signup() {
               </div>
             </div>
             <div>
-              <h1>Login Page</h1>
+              <h1>Sign up</h1>
               <div>
                 <img
                   src={email}
-                  alt="email image"
+                  alt="email"
                   style={{
                     height: "25px",
                     width: "25px",
@@ -73,53 +73,52 @@ export default function Signup() {
                 <input
                   type="text"
                   placeholder="Username"
-                    style={{
-                        paddingLeft: "5px",
-                        fontSize: "20px",
-                        width: "300px",
-                        height: "50px",
-                        borderRadius: "60px",
-                        boxShadow: "inset 0px 0px 25px 0px #888",
-                        border: "none",
-                        outline: "none",
-                        backgroundColor: "#fff",
-                        paddingLeft: "10px",
-                    }}
+                  style={{
+                    fontSize: "20px",
+                    width: "300px",
+                    height: "50px",
+                    borderRadius: "60px",
+                    boxShadow: "inset 0px 0px 25px 0px #888",
+                    border: "none",
+                    outline: "none",
+                    backgroundColor: "#fff",
+                    paddingLeft: "10px",
+                  }}
                 />
               </div>
               <div style={{ paddingtop: "20px" }}>
                 {/* <img src={pass} alt="pass" className="email"/> */}
-                    <input
-                        type="password"
-                        placeholder="Password"
-                        className="name"
-                        style={{
-                            width: "300px",
-                            marginTop: "5px",
-                            height: "50px",
-                            borderRadius: "60px",
-                            boxShadow: "inset 0px 0px 25px 0px #888",
-                            border: "none",
-                            outline: "none",
-                            backgroundColor: "#fff",
-                            paddingLeft: "10px",
-                        }}
-                    />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  className="name"
+                  style={{
+                    width: "300px",
+                    marginTop: "5px",
+                    height: "50px",
+                    borderRadius: "60px",
+                    boxShadow: "inset 0px 0px 25px 0px #888",
+                    border: "none",
+                    outline: "none",
+                    backgroundColor: "#fff",
+                    paddingLeft: "10px",
+                  }}
+                />
               </div>
               <div style={{ paddingTop: "25px" }}>
-                    <button
-                      style={{
-                        width: "380px",
-                        height: "50px",
-                        borderRadius: "60px",
-                        backgroundColor: "#1E6091",
-                        color: "white",
-                        fontSize: "25px",
-                        border: "none",
-                      }}
-                    >
-                        Login
-                    </button>
+                <button
+                  style={{
+                    width: "380px",
+                    height: "50px",
+                    borderRadius: "60px",
+                    backgroundColor: "#1E6091",
+                    color: "white",
+                    fontSize: "25px",
+                    border: "none",
+                  }}
+                >
+                  Sign up
+                </button>
               </div>
 
               <p
@@ -128,13 +127,9 @@ export default function Signup() {
                   marginTop: "25px",
                   fontWeight: "300",
                 }}
-                >
-                    <a style={{ color: "blue" }} href="#">
-                        Forgot password ?
-                    </a>{" "}
-                    <a href="/Loginpg">Create Account</a>
-                </p>
-
+              >
+                Already have an account ? <a href="/login">Log in</a>
+              </p>
             </div>
           </div>
         </div>
