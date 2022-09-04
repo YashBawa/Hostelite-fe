@@ -1,5 +1,7 @@
 // import { useState } from "react";
 
+import { Link } from "raviger";
+
 export default function Dashboard() {
   const notificationsCount = 0;
   //   const [notificationsCount, setNotificationsCount] = useState(0);
@@ -7,14 +9,14 @@ export default function Dashboard() {
   return (
     <div>
       <div className="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-[#184E77] text-[#D9ED92]">
-        <div className="fixed flex flex-col top-0 left-0 w-64 bg-[#184E77] h-full border-r">
+        <div className="flex flex-col top-0 left-0 w-64 bg-[#184E77] h-full border-r">
           <div className="flex items-center justify-center h-14 border-b">
             <div className="text-2xl font-bold">Hostelite</div>
           </div>
           <div className="overflow-y-auto overflow-x-hidden flex-grow">
             <ul className="flex flex-col py-4 space-y-1">
               <li>
-                <a
+                <Link
                   href="/home"
                   className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent  pr-6"
                 >
@@ -37,11 +39,11 @@ export default function Dashboard() {
                   <span className="ml-2 text-sm tracking-wide truncate">
                     Dashboard
                   </span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/report"
+                <Link
+                  href="/health"
                   className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
                   <span className="inline-flex justify-center items-center ml-4">
@@ -50,10 +52,10 @@ export default function Dashboard() {
                   <span className="ml-2 text-sm tracking-wide truncate">
                     Health Report
                   </span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/complaint"
                   className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
@@ -63,10 +65,10 @@ export default function Dashboard() {
                   <span className="ml-2 text-sm tracking-wide truncate">
                     Complaint Request
                   </span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/clean"
                   className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
@@ -76,10 +78,10 @@ export default function Dashboard() {
                   <span className="ml-2 text-sm tracking-wide truncate">
                     Room Cleaning
                   </span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/leave"
                   className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
@@ -89,10 +91,10 @@ export default function Dashboard() {
                   <span className="ml-2 text-sm tracking-wide truncate">
                     Leave Request
                   </span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/chatbot"
                   className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
@@ -115,10 +117,10 @@ export default function Dashboard() {
                   <span className="ml-2 text-sm tracking-wide truncate">
                     Chatbot
                   </span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/notification"
                   className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
@@ -146,10 +148,10 @@ export default function Dashboard() {
                       {notificationsCount}
                     </span>
                   )}
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/profile"
                   className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
@@ -172,10 +174,10 @@ export default function Dashboard() {
                   <span className="ml-2 text-sm tracking-wide truncate">
                     Profile
                   </span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/logout"
                   className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
@@ -198,7 +200,7 @@ export default function Dashboard() {
                   <span className="ml-2 text-sm tracking-wide truncate">
                     Logout
                   </span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

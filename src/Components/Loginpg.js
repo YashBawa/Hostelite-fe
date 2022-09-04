@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "../Images/account_image.jpg";
 import email from "../Images/email.jpg";
-
 
 const main = {
   height: "750px",
@@ -31,6 +30,9 @@ const profile = {
   borderRadius: "130px",
 };
 export default function Loginpg() {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
   return (
     <div>
       <div style={main}>
@@ -62,7 +64,7 @@ export default function Loginpg() {
               <div>
                 <img
                   src={email}
-                  alt="email image"
+                  alt="email"
                   style={{
                     height: "25px",
                     width: "25px",
@@ -73,8 +75,10 @@ export default function Loginpg() {
                 <input
                   type="text"
                   placeholder="Username"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
                   style={{
-                    paddingLeft: "5px", fontSize: "20px",
+                    fontSize: "20px",
                     width: "300px",
                     height: "50px",
                     borderRadius: "60px",
@@ -91,6 +95,8 @@ export default function Loginpg() {
                 <input
                   type="password"
                   placeholder="Password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                   className="name"
                   style={{
                     width: "300px",
@@ -128,10 +134,13 @@ export default function Loginpg() {
                   fontWeight: "300",
                 }}
               >
-                <a style={{ color: "blue" }} href="#">
-                  Forgot password ?
-                </a>{" "}
-                <a href="/Signup">Create Account</a>
+                New user?{" "}
+                <a
+                  href="/signup"
+                  className="hover:text-blue-900 hover:font-bold"
+                >
+                  Sign up
+                </a>
               </p>
             </div>
           </div>
