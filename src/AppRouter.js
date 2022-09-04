@@ -14,7 +14,7 @@ import Profile from "./Components/Profile";
 const route = {
   "/": () => <Home />,
   "/login": () => <Loginpg />,
-  "/signin" : () => <Signup/>
+  "/signup" : () => <Signup/>,
   "/home": () => <HomePage />,
   "/health": () => <HealthReport />,
   "/clean": () => <RoomCleaning />,
