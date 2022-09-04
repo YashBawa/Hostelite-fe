@@ -1,5 +1,4 @@
 // import { useState } from "react";
-
 import { Link } from "raviger";
 
 export default function Dashboard() {
@@ -18,7 +17,7 @@ export default function Dashboard() {
               <li>
                 <Link
                   href="/home"
-                  className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent  pr-6"
+                  className="relative flex flex-row items-center h-11 focus:outline-none hover:font-bold transition duration-300 hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent  pr-6"
                 >
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
@@ -44,7 +43,7 @@ export default function Dashboard() {
               <li>
                 <Link
                   href="/health"
-                  className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
+                  className="relative flex flex-row items-center h-11 focus:outline-none hover:font-bold hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
                   <span className="inline-flex justify-center items-center ml-4">
                     <i className="fas fa-hospital"></i>
@@ -57,7 +56,7 @@ export default function Dashboard() {
               <li>
                 <Link
                   href="/complaint"
-                  className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
+                  className="relative flex flex-row items-center h-11 focus:outline-none hover:font-bold transition duration-300 hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
                   <span className="inline-flex justify-center items-center ml-4">
                     <i className="fa fa-exclamation-triangle"></i>
@@ -70,7 +69,7 @@ export default function Dashboard() {
               <li>
                 <Link
                   href="/clean"
-                  className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
+                  className="relative flex flex-row items-center h-11 focus:outline-none hover:font-bold transition duration-300 hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
                   <span className="inline-flex justify-center items-center ml-4">
                     <i className="fas fa-broom"></i>
@@ -83,7 +82,7 @@ export default function Dashboard() {
               <li>
                 <Link
                   href="/leave"
-                  className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
+                  className="relative flex flex-row items-center h-11 focus:outline-none hover:font-bold transition duration-300 hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
                   <span className="inline-flex justify-center items-center ml-4">
                     <i className="fa fa-external-link"></i>
@@ -96,7 +95,7 @@ export default function Dashboard() {
               <li>
                 <Link
                   href="/chatbot"
-                  className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
+                  className="relative flex flex-row items-center h-11 focus:outline-none hover:font-bold transition duration-300 hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
@@ -122,7 +121,7 @@ export default function Dashboard() {
               <li>
                 <Link
                   href="/notification"
-                  className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
+                  className="relative flex flex-row items-center h-11 focus:outline-none hover:font-bold transition duration-300 hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
@@ -153,7 +152,7 @@ export default function Dashboard() {
               <li>
                 <Link
                   href="/profile"
-                  className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
+                  className="relative flex flex-row items-center h-11 focus:outline-none hover:font-bold transition duration-300 hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg
@@ -179,7 +178,7 @@ export default function Dashboard() {
               <li>
                 <Link
                   href="/logout"
-                  className="relative flex flex-row items-center h-11 focus:outline-none hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
+                  className="relative flex flex-row items-center h-11 focus:outline-none hover:font-bold transition duration-300 hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
                   <span className="inline-flex justify-center items-center ml-4">
                     <svg

@@ -58,11 +58,11 @@ export default function Signup() {
               </div>
             </div>
             <div>
-              <h1>SignUp Page</h1>
+              <h1>Sign up</h1>
               <div>
                 <img
                   src={email}
-                  alt="email image"
+                  alt="email"
                   style={{
                     height: "25px",
                     width: "25px",
@@ -139,7 +139,7 @@ export default function Signup() {
                         border: "none",
                       }}
                     >
-                        Create Account 
+                        Sign up
                     </button>
               </div>
 
@@ -149,9 +149,9 @@ export default function Signup() {
                   marginTop: "25px",
                   fontWeight: "300",
                 }}
-                ><a href="/Loginpg"></a>
-                </p>
-
+              >
+                Already have an account ? <a href="/login">Log in</a>
+              </p>
             </div>
           </div>
         </div>
