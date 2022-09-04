@@ -10,11 +10,12 @@ import Complaint from "./Components/Complaint";
 import Chatbot from "./Components/Chatbot";
 import Notification from "./Components/Notification";
 import Profile from "./Components/Profile";
+import NotFound from "./Components/NotFound";
 
 const route = {
   "/": () => <Home />,
   "/login": () => <Loginpg />,
-  "/signup" : () => <Signup/>,
+  "/signup": () => <Signup />,
   "/home": () => <HomePage />,
   "/health": () => <HealthReport />,
   "/clean": () => <RoomCleaning />,
@@ -23,9 +24,10 @@ const route = {
   "/chatbot": () => <Chatbot />,
   "/notification": () => <Notification />,
   "/profile": () => <Profile />,
+  "*": () => <NotFound />,
 };
 
 export default function AppRouter() {
   const routes = useRoutes(route);
-  return <div> {routes}</div>;
+  return <div>{routes}</div>;
 }

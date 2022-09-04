@@ -1,4 +1,6 @@
+import { navigate } from "raviger";
 import React, { useState } from "react";
+import { login } from "../ApiUtils";
 import Image from "../Images/account_image.jpg";
 import email from "../Images/email.jpg";
 
@@ -33,6 +35,21 @@ export default function Loginpg() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const data = await login(username, password);
+      if (data.token) {
+        localStorage.setItem("token", data.token);
+        navigate(`/home`);
+      } else {
+        setPassword("");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div>
       <div style={main}>
@@ -59,7 +76,7 @@ export default function Loginpg() {
                 <img src={Image} style={profile} alt="profile" />
               </div>
             </div>
-            <div>
+            <form onSubmit={handleSubmit}>
               <h1>Login Page</h1>
               <div>
                 <img
@@ -113,6 +130,7 @@ export default function Loginpg() {
               </div>
               <div style={{ paddingTop: "25px" }}>
                 <button
+                  type="submit"
                   style={{
                     width: "380px",
                     height: "50px",
@@ -142,7 +160,7 @@ export default function Loginpg() {
                   Sign up
                 </a>
               </p>
-            </div>
+            </form>
           </div>
         </div>
       </div>

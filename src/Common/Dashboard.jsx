@@ -1,9 +1,14 @@
 // import { useState } from "react";
-import { Link } from "raviger";
+import { Link, navigate } from "raviger";
 
 export default function Dashboard() {
   const notificationsCount = 0;
   //   const [notificationsCount, setNotificationsCount] = useState(0);
+
+  const logoutUser = () => {
+    localStorage.removeItem("token");
+    navigate("/login");
+  };
 
   return (
     <div>
@@ -176,8 +181,8 @@ export default function Dashboard() {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/logout"
+                <div
+                  onClick={() => logoutUser()}
                   className="relative flex flex-row items-center h-11 focus:outline-none hover:font-bold transition duration-300 hover:bg-[#D9ED92] text-[#D9ED92] hover:text-[#184E77] hover:border-[#168AAD] border-l-4 border-transparent pr-6"
                 >
                   <span className="inline-flex justify-center items-center ml-4">
@@ -199,7 +204,7 @@ export default function Dashboard() {
                   <span className="ml-2 text-sm tracking-wide truncate">
                     Logout
                   </span>
-                </Link>
+                </div>
               </li>
             </ul>
           </div>
