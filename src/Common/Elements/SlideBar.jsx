@@ -87,7 +87,7 @@ export default function SlideBar() {
         <TabPanel value={value} index={0} dir={theme.direction}>
           <div className="flex flex-col gap-4">
             {items.map((item) => (
-              <div className="flex justify-between gap-2 bg-[#BAF19C] rounded-lg p-4 shadow-lg hover:shadow-xl transition duration-300">
+              <div className="text-xl flex justify-between gap-2 bg-[#BAF19C] rounded-lg p-4 shadow-lg hover:shadow-xl transition duration-300">
                 <p className="text-3xl">{item.name}</p>
                 <p className="flex justify-center items-center bg-yellow-300 font-bold rounded-full p-2">
                   {item.status}
@@ -100,7 +100,7 @@ export default function SlideBar() {
         <TabPanel value={value} index={1} dir={theme.direction}>
           <div className="flex flex-col gap-4">
             {items.map((item) => (
-              <div className="flex justify-between gap-2 bg-[#f19c9c] rounded-lg p-4 shadow-lg hover:shadow-xl transition duration-300">
+              <div className="text-xl flex justify-between gap-2 bg-[#f19c9c] rounded-lg p-4 shadow-lg hover:shadow-xl transition duration-300">
                 <p className="text-3xl">{item.name}</p>
                 <p className="flex justify-center items-center bg-green-300 font-bold rounded-full p-2">
                   {item.status}
