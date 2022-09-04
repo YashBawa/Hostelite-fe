@@ -45,3 +45,8 @@ export const login = async (username, password) => {
   const data = { username: username, password: password };
   return request("POST", data, "api-token-auth/");
 };
+
+export const signup = async (username, password) => {
+  const data = { username: username, password: password };
+  return request("POST", data, "api-token-auth/");
+};

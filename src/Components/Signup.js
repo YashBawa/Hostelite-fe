@@ -1,4 +1,6 @@
-import React from "react";
+import { navigate } from "raviger";
+import React, { useState } from "react";
+import { signup } from "../ApiUtils";
 import Image from "../Images/account_image.jpg";
 import email from "../Images/email.jpg";
 
@@ -31,6 +33,23 @@ const profile = {
 };
 
 export default function Signup() {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      signup(username, password).then(() => {
+        setTimeout(() => {
+          navigate("/login");
+        }, 2000);
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div>
       <div style={main}>
@@ -57,7 +76,7 @@ export default function Signup() {
                 <img src={Image} style={profile} alt="profile" />
               </div>
             </div>
-            <div>
+            <form onSubmit={handleSubmit}>
               <h1>Sign up</h1>
               <div>
                 <img
@@ -73,6 +92,8 @@ export default function Signup() {
                 <input
                   type="text"
                   placeholder="Username"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
                   style={{
                     fontSize: "16px",
                     width: "300px",
@@ -86,7 +107,7 @@ export default function Signup() {
                   }}
                 />
 
-                <input
+                {/* <input
                   type="text"
                   placeholder="Email id"
                   style={{
@@ -101,12 +122,14 @@ export default function Signup() {
                     backgroundColor: "#fff",
                     paddingLeft: "10px",
                   }}
-                />
+                /> */}
               </div>
               <div>
                 {/* <img src={pass} alt="pass" className="email"/> */}
                 <input
                   type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                   placeholder="Password"
                   className="name"
                   style={{
@@ -125,6 +148,7 @@ export default function Signup() {
               </div>
               <div style={{ paddingTop: "25px" }}>
                 <button
+                  type="submit"
                   style={{
                     width: "380px",
                     height: "50px",
@@ -148,7 +172,7 @@ export default function Signup() {
               >
                 Already have an account ? <a href="/login">Log in</a>
               </p>
-            </div>
+            </form>
           </div>
         </div>
       </div>
