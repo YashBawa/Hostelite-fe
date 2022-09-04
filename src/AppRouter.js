@@ -14,7 +14,7 @@ import Profile from "./Components/Profile";
 const route = {
   "/": () => <Home />,
   "/login": () => <Loginpg />,
-  "/signup" : () => <Signup/>,
+  "/signup": () => <Signup />,
   "/home": () => <HomePage />,
   "/health": () => <HealthReport />,
   "/clean": () => <RoomCleaning />,
@@ -27,5 +27,5 @@ const route = {
 
 export default function AppRouter() {
   const routes = useRoutes(route);
-  return <div> {routes}</div>;
+  return <div>{routes}</div>;
 }
